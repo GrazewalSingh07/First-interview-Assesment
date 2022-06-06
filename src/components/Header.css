@@ -1,4 +1,7 @@
 .header{
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
+}
+.header>*{
+   margin: 1rem;
 }
