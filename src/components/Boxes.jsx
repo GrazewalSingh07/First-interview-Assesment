@@ -1,9 +1,8 @@
 import {CloseCircleOutlined } from "@ant-design/icons"
 import { Input, Select } from 'antd';
-
+import { useContext } from "react"
+import { AppContext } from "../context/AppContext"
     const { Option } = Select;
-    // const { OptionSec } = Select;
-    
 
     const onChange = (value) => {
         console.log(`selected ${value}`);
@@ -16,16 +15,16 @@ import { Input, Select } from 'antd';
     const handleChange = (value) => {
     console.log(`selected ${value}`);
     };
-export const Boxes=()=>{
-
-
+export const Boxes=({inputtext ,defaultval_independent,defaultval_dependent,frequency})=>{
+     
+const [addrow,handlerow] =useContext(AppContext)
 
     return <div style={{display:"flex",justifyContent:"space-around" }}>
-        <CloseCircleOutlined style={{fontSize:"2rem"}}/>
-        <Input value= "" style={{width:"10%", height:"2.2rem"}}/>
+        <CloseCircleOutlined style={{fontSize:"2rem"}} onClick={()=>handlerow(-1)}/>
+        <Input value= {inputtext} style={{width:"10%", height:"2.2rem"}}/>
          
         <Select mode="multiple" style={{ width: '40%', }} placeholder="Select..."
-                // defaultValue={['ME Totge (Avg.)','ME Speed (Avg.)']}
+                defaultValue={defaultval_independent}
                 onChange={handleChange}
                 optionLabelProp="label" >
                 <Option value="ME Totge (Avg.)" label="ME Totge (Avg.)">
@@ -47,7 +46,7 @@ export const Boxes=()=>{
          </Select>
       
          <Select
-          
+          defaultValue={defaultval_dependent}
             showSearch
             placeholder="Select..."
             optionFilterProp="children"
@@ -59,7 +58,7 @@ export const Boxes=()=>{
             <Option value=" ME Torge (Avg.)"> ME Torge (Avg.)</Option>
          
         </Select>
-        <Input type="number" placeholder="min" style={{width:"3rem", padding:"7px",margin:".2rem"}}/>
+        <Input type="number" value={frequency} placeholder="min" style={{width:"3rem", padding:"7px",margin:".2rem"}}/>
         
         <button style={{color:"red", borderRadius:"10px", border:"1px solid red", padding:".5rem", margin:".2rem"}}>Save</button>
     </div>
