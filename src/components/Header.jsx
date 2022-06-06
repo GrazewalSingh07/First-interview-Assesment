@@ -12,11 +12,17 @@ function AddRow(){
     // console.log(row)
 }
     return <div className="header">
-    <PlusCircleOutlined style={{fontSize:"3rem", color:"green",margin:"1rem"}} onClick={AddRow}/>
-        <h4>Alert Name</h4>
+         <div style={{display:"flex", justifyContent:"space-around", width:"20%"}}>
+            <PlusCircleOutlined style={{fontSize:"3rem", color:"green",margin:"1rem"}} onClick={AddRow}/>
+        
+            <h4>Alert Name</h4>
+        </div>
         <h4>Independent variable</h4>
         <h4>Dependent variable</h4>
-        <h4>Frequency</h4>
-        <h4>Save</h4>
+        <div style={{display:"flex", justifyContent:"space-around", width:"10%"}}>
+            <h4>Frequency</h4>
+            <h4>Save</h4>
+        </div>
+        
     </div>
 }
