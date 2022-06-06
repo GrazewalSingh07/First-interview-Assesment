@@ -19,7 +19,7 @@ export const Boxes=({inputtext ,defaultval_independent,defaultval_dependent,freq
      
 const [addrow,handlerow] =useContext(AppContext)
 
-    return <div style={{display:"flex",justifyContent:"space-around" }}>
+    return <div style={{display:"flex",justifyContent:"space-around" , borderBottom:".1px solid gray", margin:"1rem"}}>
         <CloseCircleOutlined style={{fontSize:"2rem"}} onClick={()=>handlerow(-1)}/>
         <Input value= {inputtext} style={{width:"10%", height:"2.2rem"}}/>
          

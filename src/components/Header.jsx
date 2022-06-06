@@ -15,13 +15,13 @@ function AddRow(){
          <div style={{display:"flex", justifyContent:"space-around", width:"20%"}}>
             <PlusCircleOutlined style={{fontSize:"3rem", color:"green",margin:"1rem"}} onClick={AddRow}/>
         
-            <h4>Alert Name</h4>
+            <h4 style={{margin:"1rem"}}>Alert Name</h4>
         </div>
-        <h4>Independent variable</h4>
-        <h4>Dependent variable</h4>
-        <div style={{display:"flex", justifyContent:"space-around", width:"10%"}}>
-            <h4>Frequency</h4>
-            <h4>Save</h4>
+        <h4 style={{margin:"1rem"}}>Independent variable</h4>
+        <h4 style={{margin:"1rem"}}>Dependent variable</h4>
+        <div style={{display:"flex", justifyContent:"space-around", width:"15%"}}>
+            <h4 style={{margin:"1rem"}}>Frequency</h4>
+            <h4 style={{margin:"1rem"}}>Save</h4>
         </div>
         
     </div>
