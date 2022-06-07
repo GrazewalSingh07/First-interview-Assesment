@@ -8,8 +8,6 @@ const [addrow,handlerow] =useContext(AppContext)
 
 function AddRow(){
     handlerow(1)
-    // console.log("hi")
-    // console.log(row)
 }
     return <div className="header">
          <div style={{display:"flex", justifyContent:"space-around", width:"20%"}}>

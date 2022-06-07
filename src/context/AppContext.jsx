@@ -22,7 +22,7 @@ const obj2={
         for(let i=0;i<addrow;i++){
             setarray([...array,<Boxes/>])
          }
-         console.log(array)
+        //  console.log(array)
     },[addrow])
     
     function handlerow(val){

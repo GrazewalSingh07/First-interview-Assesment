@@ -1,0 +1,25 @@
+.crossCircle{
+    font-size: 2rem;
+}
+.alertInput{
+    width: 10%;
+    height: 2.2rem;
+}
+.box{
+    display:flex;
+    justify-content:space-around;
+   border-bottom: .1px solid gray;
+    margin:1rem
+}
+ .frequency{
+    width:3rem; padding:1rem;
+    margin: .2rem;
+    
+ }
+ .saveBtn{
+    color:red;
+    border-radius: 10px;
+     border:1px solid red;
+     padding:.5rem;
+      margin:.2rem
+ }
